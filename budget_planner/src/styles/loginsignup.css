@@ -1,0 +1,108 @@
+.login-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height for full viewport */
+    background-color: #f0f2f5; /* Light background color */
+  }
+  
+  .container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative; /* For cool transition animation */
+  }
+  
+  .container.login {
+    background-color: #f5ecec; /* Light pink for login */
+  }
+  
+  .container.signup {
+    background-color: #e8f0fe; /* Light blue for signup */
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .login-form,
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .login-form input,
+  .signup-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .login-form button,
+  .signup-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3498db; /* Adjust button color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover,
+  .signup-form button:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+  }
+  
+  .signup-link,
+  .login-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px; /* Space after form */
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .signup-link span,
+  .login-link span {
+    cursor: pointer;
+    color: #3498db; /* Match button color */
+  }
+  
+  .signup-link span:hover,
+  .login-link span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animation for page transition */
+  
+  .container.enter {
+    opacity: 0;
+    transform: translateX(-100px); /* Slide in from left */
+  }
+  
+  .container.enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out; /* Apply transition effects */
+  }
+  
+  .container.exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .container.exit-active {
+    opacity: 0;
+    transform: translateX(100px); /* Slide out to right */
+    transition: all 0.3s ease-in-out;
+  }
+  
